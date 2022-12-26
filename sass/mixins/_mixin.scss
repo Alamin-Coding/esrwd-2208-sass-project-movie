@@ -1,0 +1,33 @@
+@import "../variable/_variable";
+
+@mixin common_btn($bg, $color, $br, $hover_color) {
+  background: $bg;
+  border-radius: $br;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+  border: 1px solid $black;
+  padding: 10px 20px;
+  color: $color;
+  position: relative;
+  &:hover {
+    background: $hover_color;
+  }
+}
+@mixin section_heading {
+  color: $black;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.5;
+  font-family: serif;
+  padding: 10px 0;
+  text-align: center;
+}
+@mixin paragraph {
+  color: #555;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  font-family: sans-serif;
+}

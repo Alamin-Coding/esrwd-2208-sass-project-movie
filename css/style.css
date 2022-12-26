@@ -1,0 +1,36 @@
+/* All Common css Start */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* All Common css End */
+/* Navbar start */
+#navbar {
+  background: red;
+  padding: 15px 0;
+}
+
+/* Navbar end */
+footer {
+  padding: 80px 0;
+  background: #222;
+}
+footer p {
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
