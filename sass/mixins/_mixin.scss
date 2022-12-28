@@ -1,33 +1,26 @@
 @import "../variable/_variable";
 
-@mixin common_btn($bg, $color, $br, $hover_color) {
-  background: $bg;
-  border-radius: $br;
+@mixin common-button {
+  font-family: $inter;
+  font-weight: 600;
+  font-size: 29px;
+  line-height: 112%;
   text-align: center;
-  font-size: 22px;
-  font-weight: 500;
-  line-height: 30px;
-  border: 1px solid $black;
-  padding: 10px 20px;
-  color: $color;
-  position: relative;
-  &:hover {
-    background: $hover_color;
+  border-radius: 5px;
+  padding: 16px 20px;
+  color: $white;
+  background: $btn-bg-primary;
+  transition: all linear .3s;
+  &:hover{
+    background: $white;
+    color: $btn-color;
   }
 }
-@mixin section_heading {
-  color: $black;
-  font-size: 50px;
-  font-weight: bold;
-  line-height: 1.5;
-  font-family: serif;
-  padding: 10px 0;
-  text-align: center;
-}
-@mixin paragraph {
-  color: #555;
+@mixin paragraph($color, $font-family) {
+  font-weight: 400;
   font-size: 16px;
-  font-weight: normal;
-  line-height: 1.5;
-  font-family: sans-serif;
+  line-height: 24px;
+  letter-spacing: 0.15em;
+  color: $color;
+  font-family: $font-family;
 }

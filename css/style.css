@@ -22,11 +22,167 @@ img {
 /* All Common css End */
 /* Navbar start */
 #navbar {
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 30px 0;
+}
+#navbar ul.navbar-nav li {
+  margin-left: 50px;
+}
+#navbar ul.navbar-nav li a {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.15em;
+  transition: all linear 0.3s;
+  position: relative;
+}
+#navbar ul.navbar-nav li a:focus {
+  color: green;
+}
+#navbar ul.navbar-nav li a::after {
+  content: "";
+  width: 0;
+  height: 1px;
   background: red;
-  padding: 15px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all linear 0.3s;
+}
+#navbar ul.navbar-nav li a:hover::after {
+  width: 100%;
 }
 
 /* Navbar end */
+/* Banner part start*/
+#banner {
+  background: url(../images/Banner-BG.jpg) no-repeat center/cover;
+}
+#banner .overlay {
+  padding-top: 185px;
+  background: linear-gradient(82.06deg, rgba(1, 1, 1, 0.62) 46.14%, rgba(31, 169, 180, 0) 101.22%);
+  box-shadow: inset 0px 115px 83px rgba(0, 0, 0, 0.7);
+}
+#banner .overlay .banner_info h1 {
+  font-family: "Kaushan Script", cursive;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 112%;
+  text-align: center;
+  letter-spacing: 0.15em;
+}
+#banner .overlay .banner_info h1 span {
+  display: block;
+  font-size: 50px;
+}
+#banner .overlay .banner_info h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  padding-top: 11px;
+  padding-bottom: 8px;
+}
+#banner .overlay .banner_info p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  padding-bottom: 34px;
+}
+#banner .overlay .banner_info .banner_btn {
+  display: inline-flex;
+  align-items: center;
+  padding-bottom: 66px;
+  gap: 5px;
+}
+#banner .overlay .banner_info .banner_btn a {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 29px;
+  line-height: 112%;
+  text-align: center;
+  border-radius: 5px;
+  padding: 16px 20px;
+  color: #ffffff;
+  background: #244B49;
+  transition: all linear 0.3s;
+  margin-right: 20px;
+  display: inline-flex;
+  gap: 5px;
+}
+#banner .overlay .banner_info .banner_btn a:hover {
+  background: #ffffff;
+  color: #173157;
+}
+#banner .overlay .banner_info .banner_btn a span.info {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+#banner .overlay .banner_info .banner_btn a:hover span.info {
+  border: 1px solid #173157;
+}
+#banner .overlay .movie_slider .slide_item {
+  margin: 0 12px;
+}
+#banner .overlay .movie_slider .slide_item .image {
+  position: relative;
+}
+#banner .overlay .movie_slider .slide_item .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#banner .overlay .movie_slider .slide_item .image .movie_overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(22, 39, 65, 0.78);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+}
+#banner .overlay .movie_slider .slide_item .image .movie_overlay a {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #ffffff;
+}
+#banner .overlay .movie_slider .slide_item.slick-center .movie_overlay {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Banner part end*/
 footer {
   padding: 80px 0;
   background: #222;

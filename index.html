@@ -1,37 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <nav id="navbar">
-        <div class="container">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Movie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- All google fonts start -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- All Google fonts end -->
+    <link rel="stylesheet" href="css/slick.css">
 
-    <section id="about">
+    <!-- main style file -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Navbar part start -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
         <div class="container">
-            <h2>Lorem ipsum dolor <span>sit amet consectetur</span> adipisicing elit. Architecto, error!</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit sit ipsam repellat nisi debitis quo repellendus id tempore animi consequuntur, blanditiis in praesentium inventore. Tempore quidem non rem neque eveniet.</p>
-            <button class="about_btn">Click</button>
-            <button class="about_btn">Click</button>
-            <button class="about_btn">Click</button>
-            <button class="about_btn">Click</button>
-            <button class="footer_btn">Click</button>
+          <a class="navbar-brand" href="#">
+            <img class="img-fluid" src="./images/logo.png" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tv Shows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">New & Popular</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Browse</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+    <!-- Navbar part end -->
+
+
+    <!-- Banner part start -->
+    <section id="banner">
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="banner_info">
+                            <h1><span>THE</span> SANdMAN</h1>
+                            <h4>It’s Official: More Episodes Are Coming</h4>
+                            <p>After years of impisonment, Morpheus - The King of Dreams- embarks on a journey across worlds to fine what was stolen from him and resrore his power</p>
+                            <div class="banner_btn">
+                                <a href="#">
+                                    <span>
+                                    <i class="fa-solid fa-play"></i>
+                                </span> Play</a>
+                                <a href="#">
+                                    <span class="info">
+                                        <i class="fa-solid fa-info"></i>                                         
+                                    </span>
+                                 More info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slider  -->
+            <div class="movie_slider">
+                <div class="slide_item">
+                    <div class="movie_item">
+                        <div class="image">
+                            <img class="img-fluid" src="./images/slider-2.jpg" alt="image">
+                            <div class="movie_overlay">
+                                <a href="#">
+                                    <i class="fa-solid fa-play"></i>
+                                </a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <!-- 02 -->
+                <div class="slide_item">
+                    <div class="movie_item">
+                        <div class="image">
+                            <img class="img-fluid" src="./images/slider-2.jpg" alt="image">
+                            <div class="movie_overlay">
+                                <a href="#">
+                                    <i class="fa-solid fa-play"></i>
+                                </a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <!-- 03 -->
+                <div class="slide_item">
+                    <div class="movie_item">
+                        <div class="image">
+                            <img class="img-fluid" src="./images/slider-2.jpg" alt="image">
+                            <div class="movie_overlay">
+                                <a href="#">
+                                    <i class="fa-solid fa-play"></i>
+                                </a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <!-- 04 -->
+                <div class="slide_item">
+                    <div class="movie_item">
+                        <div class="image">
+                            <img class="img-fluid" src="./images/slider-2.jpg" alt="image">
+                            <div class="movie_overlay">
+                                <a href="#">
+                                    <i class="fa-solid fa-play"></i>
+                                </a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <!-- 05 -->
+                <div class="slide_item">
+                    <div class="movie_item">
+                        <div class="image">
+                            <img class="img-fluid" src="./images/slider-2.jpg" alt="image">
+                            <div class="movie_overlay">
+                                <a href="#">
+                                    <i class="fa-solid fa-play"></i>
+                                </a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <!-- 06 -->
+                <div class="slide_item">
+                    <div class="movie_item">
+                        <div class="image">
+                            <img class="img-fluid" src="./images/slider-2.jpg" alt="image">
+                            <div class="movie_overlay">
+                                <a href="#">
+                                    <i class="fa-solid fa-play"></i>
+                                </a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <!-- 07 -->
+                <div class="slide_item">
+                    <div class="movie_item">
+                        <div class="image">
+                            <img class="img-fluid" src="./images/slider-2.jpg" alt="image">
+                            <div class="movie_overlay">
+                                <a href="#">
+                                    <i class="fa-solid fa-play"></i>
+                                </a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    <!-- Banner part end -->
 
-    <footer>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eos commodi fuga consequuntur quis incidunt similique quia praesentium optio maxime officia nesciunt, consectetur, beatae magni deleniti. Accusamus, voluptate commodi! Recusandae.</p>
-    </footer>
-</body>
+
+
+
+
+
+
+
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
